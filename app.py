@@ -8,6 +8,8 @@ import tempfile
 import os
 import time
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU
+
 # Load class labels from labels.txt
 def load_labels(label_file):
     with open(label_file, 'r') as file:
