@@ -19,7 +19,7 @@ label_file = "labels.txt"
 class_labels = load_labels(label_file)
 
 # Load the YOLOv8 model
-model = YOLO("best (1).pt")
+model = YOLO("models/new_model_25epoch.pt")
 
 # Define item prices in Indian Rupees
 item_prices = {
@@ -27,7 +27,7 @@ item_prices = {
     'Let-green_alcohol_wipes': 15.0,
     'X-men': 20.0,
     'aquafina': 5.0,
-    'cart': 12.0,
+    'basket': 12.0,
     'life-buoy': 8.0,
     'luong_kho': 7.0,
     'milo': 9.0,
